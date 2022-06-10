@@ -12,7 +12,7 @@ export class AraiService {
     return `This action returns all arai`;
   }
 
-  findOne(id: number) {
+  findOne(id: 11) {
     return `This action returns a #${id} arai`;
   }
 

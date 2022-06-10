@@ -17,18 +17,18 @@ export class AraiController {
     return this.araiService.findAll();
   }
 
-  @Get(':id')
-  findOne(@Param('id') id: string) {
-    return this.araiService.findOne(+id);
-  }
+  // @Get(':id')
+  // findOne(@Param('id') id: string) {
+  //   return this.araiService.findOne(+id);
+  // }
 
-  @Patch(':id')
-  update(@Param('id') id: string, @Body() updateAraiDto: UpdateAraiDto) {
-    return this.araiService.update(+id, updateAraiDto);
-  }
+  // @Patch(':id')
+  // update(@Param('id') id: string, @Body() updateAraiDto: UpdateAraiDto) {
+  //   return this.araiService.update(+id, updateAraiDto);
+  // }
 
-  @Delete(':id')
-  remove(@Param('id') id: string) {
-    return this.araiService.remove(+id);
-  }
+  // @Delete(':id')
+  // remove(@Param('id') id: string) {
+  //   return this.araiService.remove(+id);
+  // }
 }
