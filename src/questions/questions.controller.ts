@@ -2,8 +2,9 @@ import { Controller, Get, Post, Body, Patch, Param, Delete } from '@nestjs/commo
 import { QuestionsService } from './questions.service';
 import { CreateQuestionDto } from './dto/create-question.dto';
 import { UpdateQuestionDto } from './dto/update-question.dto';
+const path = "api/v1/"
 
-@Controller('questions')
+@Controller(`${path}questions`)
 export class QuestionsController {
   constructor(private readonly questionsService: QuestionsService) {}
 

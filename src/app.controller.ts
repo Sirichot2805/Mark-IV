@@ -1,5 +1,4 @@
-import { Controller, Get, Param, Post } from '@nestjs/common';
-import { get } from 'http';
+import { Body, Controller, ForbiddenException, Get, HttpException, HttpStatus, Post, UseFilters, } from '@nestjs/common';
 import { AppService } from './app.service';
 
 @Controller()
@@ -8,11 +7,7 @@ export class AppController {
 
   @Get()
   getHello(): any {
-    return this.appService.getHello();
+    return "TKO internal pruksa project api version 1.";
   }
 
-  // @Get(':someText')
-  // getParamTest(@Param() params): string {
-  //   return this.appService.getParamTest(params.someText);
-  // }
 }
